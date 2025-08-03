@@ -1,0 +1,28 @@
+sudo su           # Switch to root
+yum update -y     # Update all packages
+reboot            # Reboot if kernel or critical system libraries
+
+gcc --version         # C compiler
+g++ --version         # C++ compiler
+python3 --version     # Python
+git --version         # Git
+
+yum groupinstall "Development Tools" -y      # Installs gcc, g++, make, etc.
+yum install git python3 -y                   # Installs Git and Python 3
+
+mkdir folder_name      # Create a folder
+rmdir folder_name      # Remove a folder
+rm -rf folder_name     # Remove a non-empty folder
+
+touch file_name.ext     # Create a file
+nano file_name.ext      # Create and write in the file
+rm file_name.ext        # Remove a file
+
+git clone https://github.com/niranjan-bhol/aws_ec2_alpha.git temp-repo && mv temp-repo/* temp-repo/.* . 2>/dev/null && rm -rf temp-repo     # Clone all the folders, files present in the github repo, without cloning parent directory
+
+ping kite.trade
+ping 104.16.34.50
+ping -c 10 kite.trade
+ping -c 10 104.16.34.50
+dig+ short kite.trade 
+
