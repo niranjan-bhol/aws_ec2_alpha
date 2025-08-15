@@ -8,12 +8,13 @@ from datetime import datetime, timedelta
 
 # --- API Credentials ---
 api_key = "8n5mz9cmhf4dpaci"
-access_token = "80EPoDEv3W9Ckcex5uo6G6MnlusA2YlQ"
 
-"""
 # --- Read Access Token from access_token.txt ---
 with open("access_token.txt", "r") as file:
     access_token = file.read().strip()
+
+"""
+access_token = "80EPoDEv3W9Ckcex5uo6G6MnlusA2YlQ"
 """
 
 # --- ETF-Underlying Mapping ---
