@@ -34,3 +34,20 @@ ping -c 10 kite.trade
 ping -c 10 104.16.34.50
 dig+ short kite.trade 
 
+sudo yum install cronie -y     # Install the cron service
+
+sudo systemctl start crond
+sudo systemctl enable crond     # Start and enable cron
+
+systemctl status crond     # Edit your cron jobs
+
+which python3     # Check if it’s running
+
+sudo python3 -m pip install kiteconnect       # Install kiteconnect library for root
+python3 -m pip install --user kiteconnect     # Install kiteconnect library for ec2-user
+
+sudo crontab -e     # Edit your cron jobs
+
+10 9 * * * /usr/bin/python3 /path/to/login.py >> /path/to/login.log 2>&1                             # to run login.py at 9:10 AM daily
+50 8 * * * /usr/bin/python3 /home/ec2-user/alpha/login.py >> /home/ec2-user/alpha/login.log 2>&1     # to run login.py at 8:50 AM daily
+

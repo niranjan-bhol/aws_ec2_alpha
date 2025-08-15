@@ -2,6 +2,7 @@ import requests, json, pyotp
 from kiteconnect import KiteConnect
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
+import os
 
 api_key = '8n5mz9cmhf4dpaci'
 api_secret = '0v2mgfxtwft8pi39obmkdiahtgea8ugj'
@@ -23,7 +24,11 @@ def login():
     data = kite.generate_session(request_token, api_secret=api_secret)
     kite.set_access_token(data["access_token"])
 
-    with open("access_token.txt", "w") as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    path = os.path.join(script_dir, "access_token.txt")
+
+    with open(path, "w") as f:
         f.write(data["access_token"])
 
     return kite
