@@ -20,13 +20,17 @@ rm file_name.ext        # Remove a file
 
 git clone https://github.com/niranjan-bhol/aws_ec2_alpha.git temp-repo && mv temp-repo/* temp-repo/.* . 2>/dev/null && rm -rf temp-repo     # Clone all the folders, files present in the github repo, without cloning parent directory
 
+sudo yum install python3-pip -y     # Install pip3
+
+pip3 install requests pyotp yfinance yahooquery kiteconnect numpy pandas scikit-learn tabulate asyncio aiohttp datetime time
+
+timedatectl     # Check current time settings
+
+sudo timedatectl set-timezone Asia/Kolkata     # Set timezone to Asia/Kolkata
+
 ping kite.trade
 ping 104.16.34.50
 ping -c 10 kite.trade
 ping -c 10 104.16.34.50
 dig+ short kite.trade 
-
-sudo yum install python3-pip -y     # Install pip3
-
-pip3 install pyotp kiteconnect numpy pandas yahooquery tabulate scikit-learn
 

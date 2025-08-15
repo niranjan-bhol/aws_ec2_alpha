@@ -1,5 +1,0 @@
-ping kite.trade
-ping 104.16.34.50
-ping -c 10 kite.trade
-ping -c 10 104.16.34.50
-dig+ short kite.trade 

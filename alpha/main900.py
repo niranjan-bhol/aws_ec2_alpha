@@ -22,6 +22,16 @@ payloads = [
         "quantity": 1,
         "product": "MIS",
         "validity": "DAY"
+    },
+    {
+        "tradingsymbol": "LIQUIDBEES",
+        "exchange": "NSE",
+        "transaction_type": "SELL",
+        "order_type": "LIMIT",
+        "price": 1050,
+        "quantity": 1,
+        "product": "MIS",
+        "validity": "DAY"
     }
 ]
 
